@@ -1,0 +1,1 @@
+pyinstaller  -F G1.py

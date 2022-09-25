@@ -1,4 +1,0 @@
-sheep 羊
-money 猴子
-tiger 老虎
-rabbit 兔子

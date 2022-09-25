@@ -1,0 +1,182 @@
+#author:LingXueHu
+'''
+一个测试的文字游戏~
+仅供学习参考测试！
+'''
+#ver.0.0.1_preview
+
+#最后更新时间：2022.9.18
+
+#import区域
+import time
+import os
+
+
+#游戏前部
+print('***********************')
+print('欢迎游玩本测试作品，在开始游戏之前你需要阅读并同意以下条款：')
+time.sleep(0.5)
+print('##################\n\
+本测试项目使用条款\n\n\
+1.本测试项目仅python学习研究，LingXueHu制作，未经允许，禁止搬运、盗用！\n\
+2.没了....嗯...你没听错就是没了\n\
+(更多后续待补...)\n\
+【提示】目前暂不支持存档，所以就当一次性游戏吧！\n')
+time.sleep(0.5)
+print('同意以上条款并开始游戏？【y/n】')
+tk=input('')
+if tk=="y":
+    print('已同意条款开始游戏！')
+elif tk=="n":
+    print('你必须同意条款才能进行游戏！')
+    time.sleep(3)
+    exit(0)
+else:
+    print('你的输入有误！只能输入y或n！')
+    
+#游戏加载效果
+print('Loading resources...')
+print('Please wait...')
+time.sleep(5)
+print('Completing game initialization...')
+time.sleep(2)
+print('[Main thread] initialization complete!')
+print('Loading language text information...')
+time.sleep(1)
+print('语言文本配置已载入！当前：zh_CN')
+time.sleep(1)
+os.system('cls' if os.name == 'nt' else 'clear')
+
+#游戏主体
+print('*******************')
+print('剧情第一分支:苏醒')
+print('*******************')
+time.sleep(2)
+print('G1启动仓实验体正在恢复...')
+print('.')
+time.sleep(2)
+print('..')
+time.sleep(2)
+print('...')
+time.sleep(2)
+print('[???]呃...能听见吗？')
+time.sleep(2)
+print('你：？')
+time.sleep(2)
+print('(你迷迷糊糊被一阵声音吵醒...)')
+time.sleep(2)
+print('你缓缓睁开了双眼...头上的刺痛让你逐渐清醒过来...')
+time.sleep(1)
+print('...')
+print('（你看向四周,眼前的陌生环境让你有些不知所措...')
+time.sleep(2)
+print('[???]嘿！G1号实验体，发什么呆呢，能听见我说话吗？')
+time.sleep(1)
+print('（你疑惑地朝声音的方向转过头去)')
+time.sleep(2)
+print('(声音是从无线里传出来的...但墙上屏幕里的的黑衣人应该就是这个声音的发出者了')
+time.sleep(1)      
+print('你:你在叫我吗？')
+time.sleep(1)
+print('[???]这不废话么，这个实验室除了我们没别人了')
+time.sleep(1)
+print('你:......')
+time.sleep(2)
+print('[???]你这是什么眼神.....')
+time.sleep(2)
+print('......')
+time.sleep(3)
+print('[???]不过问题也不大(流汗)...你没事就行')
+time.sleep(1)
+print('你：嗯...我确实没啥事就是头有点疼...')
+time.sleep(1.5)
+print('你：对了，你说这是实验室...我是实验体？')
+time.sleep(2)
+print('你：这是怎么回事？')
+time.sleep(1)
+print('[???]是的，而且看起来你还是比较成功的一个')
+time.sleep(1.5)
+print('[???]我知道你有很多疑问，很正常，每个实验体都这样，毕竟实验体也不是你一个')
+time.sleep(1.5)
+print('[???]至于事情的具体这个...就有点说来话长了')
+time.sleep(1.5)
+print('[???]不过现在这些对你来说还不重要，先自己四处看看环境吧!')
+time.sleep(2)
+print('你：可是....')
+time.sleep(2)
+print('(话还没说完，通讯就直接被掐断了)')
+time.sleep(2)
+print('你:焯！')
+time.sleep(2)
+print('你：让我问完啊焯')
+time.sleep(2)
+print('(没办法，通讯已经断了)')
+time.sleep(2)
+print('(无奈的你打算先按那个黑衣人的话，先四处转转)')
+time.sleep(1)
+print('【提示】:你看到门口桌前有个咖啡机，要先喝杯咖啡吗？')
+xz=input('【1.喝/2.不喝】')
+if xz=="1":
+      print('这尼玛...是雪罢（恼')
+      time.sleep(0.5)
+      print('你：没喝过这么难喝的东西，tnnd!')
+elif xz=="2":
+    print('(你闻了一下...差点昨晚的饭没吐出来)')
+    print('(还好没喝...诶，上次吃饭是什么时候... )')
+    time.sleep(1)
+    print('(记不得了...')
+else:
+    print('没有其他选择了...')
+
+time.sleep(2)
+print('你：还是出去看看吧...')
+time.sleep(0.5)
+print('(你打算出去看看...')
+time.sleep(3)
+print('【提示】剧情第一分支已完成！')
+time.sleep(1)
+print('*****************')
+print('剧情第二分支:初识')
+print('*****************')
+time.sleep(2)
+print('(走到实验室门口，门自动打开了)')
+time.sleep(0.5)
+print('[控制台系统提示]欢迎来到N72实验区！(机械音)')
+time.sleep(0.5)
+print('(随着机器语音报道响起，你看向了外面...)')
+time.sleep(1)
+print('你：woc!这就nmd离谱！')
+time.sleep(1)
+print('(你被外面的先进的东西震惊到了)')
+time.sleep(0.5)
+print('你：哎~！我操(剧烈撞击声）')
+time.sleep(1)
+print('(你被钢管绊倒并感受到了动能...)')
+time.sleep(1)
+print('你:焯啊！')
+time.sleep(1)
+print('"你没事吧"（一个声音传来）')
+time.sleep(1)
+print('(是一个工作人员)')
+time.sleep(0.5)
+print('你：你看我像没事的样子吗(翻了个白眼)')
+time.sleep(1)
+print('[工作人员]实验体？实验体出来了，先去前厅做下登记，别乱跑，谢谢配合！')
+time.sleep(1)
+print('(你摸索着爬了起来)')
+time.sleep(0.5)
+print('你：前厅？在哪？')
+time.sleep(0.5)
+print('[工作人员]3楼')
+time.sleep(1)
+print('(你向3楼望过去，好像确实很多人，看衣着貌似跟你一样也是实验体)')
+time.sleep(0.3)
+print('(应该就是那里了)')
+time.sleep(0.5)
+
+      
+print('************施工线***********')
+print('【提示】后面还在更新，暂时没有了,可以关注期待一下!')
+time.sleep(10)
+
+
