@@ -1,0 +1,4 @@
+name,age,score
+clark,18,60
+rita,17,70
+jone,20,80
