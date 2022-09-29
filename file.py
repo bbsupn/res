@@ -32,3 +32,5 @@ while True:
             print(f"翻译结果为:{dic[word]}")
         else:
             print("字典内未找到结果")
+
+#zip()打包函数
