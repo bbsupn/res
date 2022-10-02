@@ -2,6 +2,8 @@ f = open('logger.log', 'a')
 try:
     while True:
         data = input("输入信息：")
+        if data=='exit'|'quit':
+            break
         data = int(data)
         f.write(str(data) + '\n')
 except Exception as e:
