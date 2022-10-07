@@ -5,13 +5,23 @@
 
 
 
-
+from winsound import PlaySound
 import msvcrt
 import time,random
 
+print('########################')
+print('欢迎游玩撅战前线')
+print('按任意键开始')
+print('########################')
+input('')
+
+
+
+
+
 # 需要的数据和变量放在开头
-player_list =  ['【狂血战士】','【森林箭手】','【光明骑士】','【独行剑客】','【格斗大师】','【枪弹专家】']
-enemy_list = ['【暗黑战士】','【黑暗弩手】','【暗夜骑士】','【嗜血刀客】','【首席刺客】','【陷阱之王】']
+player_list =  ['【德川】','【我修院】','【周撅伦】','【李田所】']
+enemy_list = ['【雪拌面】','【迎宾酒】','【蔬菜棒】','【雪球】','【淳平】']
 players = random.sample(player_list,3)  
 enemies = random.sample(enemy_list,3)
 player_info = {}
@@ -88,6 +98,7 @@ def pk_role():
             print('%s发起了攻击，%s剩余血量%d' % (enemy_name,player_name,player_life))
             print('--------------------------------------------')
             time.sleep(1)
+            PlaySound('aa.wav',flags=1)
         else:  # 每局的战果展示，以及分数score和局数的变化。
             # 调用show_result()函数，打印返回元组中的result。
             print(show_result(player_life,enemy_life)[1])
@@ -98,10 +109,13 @@ def pk_role():
 
     if score > 0:
         print('【最终结果：敌人皮炎都被撅烂了！】\n')
+        PlaySound('yarimasune.wav',flags=1)
     elif score < 0:
         print('【最终结果：被撅飞力！】\n')
+        PlaySound('ygyg.wav',flags=1)
     else:
         print('【最终结果：没分出胜负，再撅一次！】\n')
+        PlaySound('soudesune.wav',flags=1)
 
 # 返回单局战果和计分法所加分数。
 def show_result(player_life,enemy_life):  # 注意：该函数要设定参数，才能判断单局战果。
@@ -109,7 +123,7 @@ def show_result(player_life,enemy_life):  # 注意：该函数要设定参数，
         result = '\n敌人已击杀，本回合胜利！'
         return 1,result  # 返回元组，类似角色属性的传递。
     elif player_life <= 0 and enemy_life > 0:        
-        result = '\n人间悲剧，敌人把你干掉了！'
+        result = '\n人间悲剧，被撅力！'
         return -1,result
     else :
         result = '\n哦豁，你和敌人殉情(？)了！'
@@ -117,6 +131,7 @@ def show_result(player_life,enemy_life):  # 注意：该函数要设定参数，
 
 # （主函数）展开战斗流程
 def main():
+    PlaySound('ym.wav',flags=1)
     show_role()
     order_role()
     pk_role()
