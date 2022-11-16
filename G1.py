@@ -1,11 +1,11 @@
-#author:LingXueHu
+#author:LXJ
 '''
-一个测试的文字游戏~
+一个测试交互式文字小说~
 仅供学习参考测试！
 '''
 #ver.0.0.1_preview
 
-#最后更新时间：2022.9.18
+#最后更新时间：2022.10.7
 
 #import区域
 import time
@@ -14,21 +14,21 @@ import os
 
 #游戏前部
 print('***********************')
-print('欢迎游玩本测试作品，在开始游戏之前你需要阅读并同意以下条款：')
+print('欢迎游玩本测试作品，在开始浏览内容之前你需要阅读并同意以下条款：')
 time.sleep(0.5)
 print('##################\n\
 本测试项目使用条款\n\n\
-1.本测试项目仅python学习研究，LingXueHu制作，未经允许，禁止搬运、盗用！\n\
+1.本测试项目仅python学习研究，LXJ制作，未经允许，禁止搬运、盗用！\n\
 2.没了....嗯...你没听错就是没了\n\
 (更多后续待补...)\n\
-【提示】目前暂不支持存档，所以就当一次性游戏吧！\n')
+【提示】目前暂不支持存档，暂时只能一次性，待后续更新！\n')
 time.sleep(0.5)
-print('同意以上条款并开始游戏？【y/n】')
+print('同意以上条款并开始？【y/n】')
 tk=input('')
 if tk=="y":
-    print('已同意条款开始游戏！')
+    print('已同意条款并开始！')
 elif tk=="n":
-    print('你必须同意条款才能进行游戏！')
+    print('你必须同意条款才能进行浏览！')
     time.sleep(3)
     exit(0)
 else:
@@ -38,7 +38,7 @@ else:
 print('Loading resources...')
 print('Please wait...')
 time.sleep(5)
-print('Completing game initialization...')
+print('Completing initialization...')
 time.sleep(2)
 print('[Main thread] initialization complete!')
 print('Loading language text information...')
@@ -161,7 +161,7 @@ print('(是一个工作人员)')
 time.sleep(0.5)
 print('你：你看我像没事的样子吗(翻了个白眼)')
 time.sleep(1)
-print('[工作人员]实验体？实验体出来了，先去前厅做下登记，别乱跑，谢谢配合！')
+print('[工作人员]实验体？实验体若要进行合法活动，需要先去前厅做登记，别乱跑，谢谢配合！')
 time.sleep(1)
 print('(你摸索着爬了起来)')
 time.sleep(0.5)
@@ -173,8 +173,28 @@ print('(你向3楼望过去，好像确实很多人，看衣着貌似跟你一�
 time.sleep(0.3)
 print('(应该就是那里了)')
 time.sleep(0.5)
-
-      
+print('(你向3楼走去..)')
+time.sleep(1)
+print('你：人真多啊(感慨...)')
+time.sleep(2)
+print('[警卫]喂！那边那个实验体！干什么呢，依照秩序进行排队！')
+time.sleep(0.5)
+print('你:！')
+time.sleep(0.2)
+print('你：哦哦，好的....')
+time.sleep(0.5)
+print('(你慌慌张张向长龙队伍后面跑去)')
+time.sleep(1)
+print('(由于太过着急没看路，前面有个人，你一头撞了上去...)')
+time.sleep(0.5)
+print('[???]啊！！你干嘛哎哟，走路看着点！')
+time.sleep(0.5)
+print('(你被撞到地上坐着）')
+time.sleep(0.5)
+print('(你抬头看了眼对方，是个小伙子，但你有点慌，你决定....')
+xz1=input('【1.起身道歉，并尴尬地到后面继续排队 2.爬起来灰溜溜逃走并丢下一句抱歉 3.拍拍灰，不吭声走到后面继续排队')
+if xz1==1:
+    print('')
 print('************施工线***********')
 print('【提示】后面还在更新，暂时没有了,可以关注期待一下!')
 time.sleep(10)
