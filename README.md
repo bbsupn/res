@@ -1,3 +1,1 @@
 48GX8PBoqKRcFyh7SztXN5AtEh6Cbc4xG5yodCVzdVby4QD6CAPuUBj3aZi7mPaPD2PxMqn2HQJFXdkFVAMKptis3v8wgxL
-
-https://ymjc.cfd/api/v1/client/subscribe?token=c64037b1f4217575afc621a1fdb3d4cc
